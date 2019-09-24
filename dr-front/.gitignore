@@ -1,0 +1,12 @@
+node_modules
+.idea/workspace.xml
+.idea/misc.xml
+.idea/DR-front2.0.iml
+.idea/modules.xml
+.idea/codeStyles/Project.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/vcs.xml
+.idea/codeStyles/codeStyleConfig.xml
+output.js
+dist
+tempCodeRunnerFile.js

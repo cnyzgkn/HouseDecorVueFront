@@ -1,0 +1,128 @@
+img {
+  border-radius: 10px
+}
+.houseCustomGlobal {
+  box-sizing: content-box;
+  padding-top: 120px;
+  // padding: 30px 15px;
+  width: 1092px;
+  height: 100%;
+  /deep/ .ant-row-flex{
+    height: 100%;
+    flex-flow: row nowrap !important;
+  }
+  .overflowY {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    width:239px;
+    height: calc(100vh - 258px);
+  }
+  .overflowYOther {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    width:239px;
+    height: calc(100vh - 180px);
+  }
+  .overflowY::-webkit-scrollbar {
+    width: 6px;
+    max-height: calc(100vh);
+  }
+  .overflowY::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.1)
+    // background: #EDEDED;
+  }
+  .overflowY::-webkit-scrollbar-track  {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0)
+    // background: #EDEDED;
+  }
+  .overflowYOther::-webkit-scrollbar {
+    width: 6px;
+    max-height: calc(100vh);
+  }
+  .overflowYOther::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0);
+    background-color: rgba(255, 255, 255, 0)
+    // background: #EDEDED;
+  }
+  .overflowYOther::-webkit-scrollbar-track  {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0)
+    // background: #EDEDED;
+  }
+  .buttonRE {
+    background: #586287;
+    color: #fff;
+    width:94px !important;
+    margin-top: 30px;
+  }
+  .componentBody {
+    width: 100%;
+    height: inherit;
+    position: relative;
+  }
+  .scheme-wrapper {
+    display: inline-block;
+    // margin-left: 10px;
+    // float: left;
+    text-align: left
+  }
+  .firstDiv{
+    display:flex;
+    justify-content: space-between;
+    height: 92px;
+    flex-wrap: nowrap
+  }
+  .firstRe {
+    margin-top: 20px;
+    position: relative;
+  }
+  .firstImg{
+    position: absolute; 
+    top: 0; left: 0;
+    text-align: left;
+  }
+  .pimg {
+    width:72px;
+    height:72px;
+  }
+  .childNodePosition{
+    position: absolute;
+    top: 4px;
+    left: 92px;
+    font-size: 16px; 
+    font-weight: 600; 
+    color:rgba(92,92,92,1); 
+    width:400px;
+    height:22px;
+    text-align: left
+  }
+  .childCategoryName{
+    position: absolute;
+    top: 41px; 
+    left: 92px; 
+    font-size: 12px; 
+    font-weight: 400; 
+    color:rgba(92,92,92,1);
+    width:400px;
+    height:17px;
+    text-align: left
+  }
+  .showButton{
+    margin-top: 28px;
+    font-size:12px;
+    color:#8D8D8D;
+    font-weight:400;
+  }
+  .checkedItem {
+    margin-left: 79px;
+    border-top: 1px solid #E8E8E8;
+    margin-top: 6px;
+  }
+
+}

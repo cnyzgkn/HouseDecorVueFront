@@ -1,0 +1,158 @@
+/*公用样式*/
+body{
+  height: auto !important;
+  font-weight: 400;
+}
+.hide{
+  display: none !important;
+}
+
+/*select*/
+.dr-select {
+  min-width: 120px;
+  width: auto !important;
+  font-size: 12px;
+  font-weight: 400;
+  color: #5C5C5C;
+  line-height: 12px;
+}
+.ant-select .ant-select-selection{
+  height: 36px;
+  border-radius: 18px;
+}
+.ant-select-sm .ant-select-selection{
+  font-size: 12px;
+  height: 28px;
+  border-radius: 14px;
+}
+.ant-select-lg .ant-select-selection{
+  font-size: 16px;
+  height: 48px;
+  border-radius: 24px;
+}
+.ant-select .ant-select-selection__rendered{
+  line-height: 36px;
+}
+.ant-select-lg .ant-select-selection__rendered{
+  line-height: 48px;
+}
+.ant-select-sm .ant-select-selection__rendered{
+  line-height: 28px;
+}
+.ant-select-selection--single {
+  /* border-radius: 18px; */
+}
+.ant-select-dropdown-menu-item {
+  font-size: 12px;
+  font-weight: 400;
+  color: #5C5C5C;
+}
+.ant-select-dropdown-menu-item:hover {
+  background: #fafafa;
+  font-weight: 600;
+}
+.ant-select-dropdown {
+  min-width: 120px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.ant-select-selection{ /*下拉框border*/
+  border: none;
+}
+.ant-select-open .ant-select-selection{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1)
+}
+.ant-select-dropdown-menu-item:first-child{
+  border-radius: 0;
+}
+.ant-select-dropdown-menu-item:last-child{
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.ant-select-dropdown-menu-item-selected,.ant-select-dropdown-menu-item-selected:hover{
+  background-color: #bbc0c7;
+}
+/*input*/
+.ant-input {
+  border-radius: 18px;
+}
+.ant-input-lg{
+  border-radius: 24px;
+}
+.ant-input-sm{
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+/*modal */
+.ant-modal-header,.ant-modal-content{
+  background:rgba(245,245,245,1);
+}
+.ant-modal-header{
+  width: calc(100% - 80px);
+  margin: auto;
+  padding: 40px 0 20px;
+}
+.ant-modal-body{
+  padding: 24px 40px;
+}
+.ant-modal-footer{
+  background-color: #fff;
+}
+.ant-modal-title {
+  font-size:20px;
+  font-weight:600;
+  color:rgba(92,92,92,1);
+  line-height:20px;
+}
+.ant-modal-confirm-confirm .ant-modal-confirm-body > .anticon{ /*confirm弹窗图标*/
+  color: #586287;
+}
+.ant-modal-confirm-confirm .ant-btn-default{
+  background-color: #fff;
+}
+.ant-modal{  /*弹窗圆角*/
+  border-radius: 8px;
+}
+.ant-modal-footer button + button{ /*弹窗footer中按钮的间距*/
+  margin-left: 20px;
+}
+
+/*botton*/
+.ant-btn-lg{ /*大按钮圆角（ant-design不支持这个样式自定义，故在此写全局样式控制）*/
+  border-radius: 24px;
+}
+.ant-btn-danger:hover { /*ant-design不支持这个样式自定义，故在此写全局样式控制*/
+  color: #5c5c5c;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+.ant-btn-dashed{
+  background-color: #fff;
+  border-color: #fff;
+  border-style:solid; 
+}
+/*popover*/
+.ant-popover-inner{ /*tooltip popover 组件默认的浮层阴影*/
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.1)
+}
+
+/*form*/
+.ant-form-item-label{ /*form表单label标签字体对齐*/
+  text-align: left;
+}
+.ant-form-item-label label:after{
+  display: none;
+}
+.ant-notification-topRight{
+  position: fixed;
+  left: calc((100% - 384px)/2) !important;
+  top: 20px !important;
+}
+.ant-notification-topRight .ant-notification-close-icon svg{
+  display: none;
+}

@@ -1,0 +1,150 @@
+/** 
+ * websoct消息管道模拟数据
+*/
+const arr = new Array()
+arr.push({
+  id:parseInt(Math.random()*(100-1)+1),
+  msgId:parseInt(Math.random()*(100-1)+1),
+  taskId:13748,
+  customName:'吴秀丽',
+  projectName:'济源市济源市建业贰号城邦项目',
+  createTime:'13:09',
+  status:3,
+  solutionType:null,
+  styleName:null,
+  seriesName:null,
+  msgType:1,
+  renderDoneNum:null,
+  renderActiveNum:null,
+  unreadNum:5,
+  solutionName:null,
+  readed:1
+})
+arr.push({
+  id:parseInt(Math.random()*(100-1)+1),
+  msgId:parseInt(Math.random()*(100-1)+1),
+  taskId:134367,
+  customName:'张三',
+  projectName:'西宁市城北区中房城北国际村项目',
+  createTime:'16:59',
+  status:2,
+  solutionType:null,
+  styleName:null,
+  seriesName:null,
+  msgType:1,
+  renderDoneNum:null,
+  renderActiveNum:null,
+  unreadNum:5,
+  solutionName:null,
+  readed:0
+})
+arr.push({
+  id:parseInt(Math.random()*(100-1)+1),
+  msgId:parseInt(Math.random()*(100-1)+1),
+  taskId:null,
+  customName:'阮雪平',
+  projectName:'三门峡市建业联盟新城项目项目项目项目项目项目项目项目项目',
+  createTime:'2019/05/12',
+  status:1,
+  solutionType:null,
+  styleName:null,
+  seriesName:null,
+  msgType:1,
+  renderDoneNum:null,
+  renderActiveNum:null,
+  unreadNum:5,
+  solutionName:null,
+  readed:0
+})
+arr.push({
+  id:parseInt(Math.random()*(100-1)+1),
+  msgId:parseInt(Math.random()*(100-1)+1),
+  taskId:null,
+  customName:null,
+  projectName:null,
+  createTime:'2019/05/12',
+  status:1,
+  solutionType:1,
+  styleName:'现代',
+  seriesName:'一生一世',
+  msgType:2,
+  renderDoneNum:null,
+  renderActiveNum:null,
+  unreadNum:1000,
+  solutionName:'画韵东方',
+  readed:0
+})
+arr.push({
+  id:parseInt(Math.random()*(100-1)+1),
+  msgId:parseInt(Math.random()*(100-1)+1),
+  taskId:null,
+  customName:null,
+  projectName:null,
+  createTime:'10:13',
+  status:2,
+  solutionType:2,
+  styleName:'欧式',
+  seriesName:'流连忘返',
+  msgType:2,
+  renderDoneNum:null,
+  renderActiveNum:null,
+  unreadNum:1000,
+  solutionName:'天青色等烟雨',
+  readed:0
+})
+arr.push({
+  id:parseInt(Math.random()*(100-1)+1),
+  msgId:parseInt(Math.random()*(100-1)+1),
+  taskId:13787,
+  customName:null,
+  projectName:null,
+  createTime:'10:13',
+  status:null,
+  solutionType:1,
+  styleName:null,
+  seriesName:null,
+  msgType:3,
+  renderDoneNum:8,
+  renderActiveNum:6,
+  unreadNum:23,
+  solutionName:'春风十里',
+  readed:0
+})
+arr.push({
+  id:parseInt(Math.random()*(100-1)+1),
+  msgId:parseInt(Math.random()*(100-1)+1),
+  taskId:null,
+  customName:null,
+  projectName:null,
+  createTime:'10:13',
+  status:null,
+  solutionType:2,
+  styleName:null,
+  seriesName:null,
+  msgType:3,
+  renderDoneNum:25,
+  renderActiveNum:0,
+  unreadNum:23,
+  solutionName:'画韵东方',
+  readed:0
+})
+
+
+export default{
+  websoct:function(){
+    let data = {}
+    let radom = parseInt(Math.random()*(6-1)+1)
+    data.data = arr[radom-1]
+    return data
+  },
+  list:function(){
+    let res = {}
+    res.data = {
+      unReadTotalCount:1,
+      msgList:arr
+    },
+    res.code = 1
+    res.msg = '成功'
+    return res
+  }
+}
